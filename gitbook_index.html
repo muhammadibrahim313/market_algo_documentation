@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Market Analysis Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="book-icon">📊</div>
+            <h1 class="book-title">Gold Market Analytics</h1>
+            <p class="book-subtitle">Complete Guide to Gold Trading & Analysis</p>
+            <div class="book-meta">
+                <span class="version">v1.0</span>
+                <span class="separator">•</span>
+                <span class="pages-count" id="pagesCount">12 Chapters</span>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Search chapters..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+        
+        <div class="table-of-contents" id="tableOfContents">
+            <!-- Table of contents will be generated dynamically -->
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="progress-indicator">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p class="progress-text" id="progressText">Chapter 1 of 12</p>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+        <!-- Mobile menu toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Reading Progress Bar -->
+        <div class="reading-progress" id="readingProgress"></div>
+
+        <!-- Content Container -->
+        <div class="content-container" id="contentContainer">
+            <!-- Content will be loaded dynamically -->
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="page-navigation">
+            <button class="nav-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+                <div class="nav-btn-content">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chapter Title</span>
+                </div>
+            </button>
+            <button class="nav-btn next-btn" id="nextBtn">
+                <div class="nav-btn-content">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chapter Title</span>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading chapter...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
